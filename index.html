@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <link href="http://yc.stu.126.net/s/core.css?c486a3fe4bd0b4e788ba92d810a133a7" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .m-award{
+            width: 100%;
+            height: 848px;
+            position: relative;
+            background: rgb(4,186,226);
+        }
+        .m-award .bg1{
+            position: absolute;
+            height: 848px;
+            width: 918px;
+            top: 0;
+            left: 0;
+            background: url(./img/bg1.png)0 0/100% 100% no-repeat;
+            
+        }
+        .m-award .bg2{
+            position: absolute;
+            height: 848px;
+            width: 642px;
+            top: 0;
+            right: 0;
+            background: url(./img/bg2.png)0 0/100% 100% no-repeat;
+        }
+        .m-award .tit{
+            position: absolute;
+            top: 90px;
+            left: 19%;
+            width: 449px;
+            height: 38px;
+            background: url(./img/tit.png)no-repeat;
+            z-index: 2;
+        }
+        .people{
+            width: 260px;
+            height: 473px;
+            position: absolute;
+            left: 19%;
+            top: 210px;
+            background: url(./img/people.png)no-repeat;
+            z-index: 10;
+        }
+        .people .lucky{
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 11px;
+            text-align: center;
+            color: rgb(255,238,95);
+        }
+        .people .lucky-guys{
+            position: absolute;
+            top: 63px;
+            left: 25px;
+            width: 189px;
+            height: 256px;
+            font-size: 12px;
+            line-height: 32px;
+            color: rgb(153,153,153);
+            overflow: hidden;
+        }
+        .people .rule{
+            position: absolute;
+            top: 350px;
+            left: 23px;
+            font-size: 14px;
+            color: #fff;
+            line-height: 24px;
+            width: 220px;
+        }
+        .prize{
+            position: absolute;
+            top: 210px;
+            left: 42%;
+            width: 714px;
+            height: 473px;
+            background: url(./img/prize-bg.png)no-repeat;
+            z-index: 10;
+        }
+        .m-award .prize > div,.m-award .prize input{
+            float: left;
+            margin: 15px 0 0 16px;
+            width: 216px;
+            height: 136px;
+            background: url(./img/false.png)no-repeat;
+            text-align: center;
+            line-height: 136px;
+            font-size: 20px;
+            color: rgb(208,14,41);
+        }
+        .m-award .prize input{
+            border: none;
+        }
+        .m-award .prize div h3{
+            margin-top: 30px;
+        }
+        .m-award .prize div h4{
+            font-size: 19px;
+        }
+        .m-award .prize .true{
+            color: #fff;
+            background: url(./img/true.png)no-repeat;
+        }
+        .m-award .wrap{
+            position: absolute;
+            top: 210px;
+            left: 42%;
+            width: 714px;
+            height: 473px;
+            display: none;
+            z-index: 10
+        }
+        .m-award .overflow{
+            width: 714px;
+            height: 473px;
+            background: #000;
+            opacity: 0.7;
+        }
+        .m-award .result{
+            background: url(./img/thx.png)no-repeat;
+            width: 414px;
+            height: 258px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -207px;
+            margin-top: -129px;
+            z-index: 20;
+
+        }
+        #item{
+            font-weight: bold;
+            font-size: 22px;
+            color: rgb(255,238,95);
+            background: url(./img/nothover.png)no-repeat;
+            cursor: pointer;
+        }
+        #item:hover{
+            background: url(./img/hover.png)no-repeat;   
+        }
+        #lucky-guys-wrap{
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="m-award">
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="tit"></div>
+        <div class="people">
+            <p class="lucky">获奖名单</p>
+            <div class="lucky-guys">
+                <div id="lucky-guys-wrap">
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>joladjfjljsdklslf&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠</p>
+                    <p>joladjfjljsdklslf&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>joladjfjljsdklslf&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>joladjfjljsdklslf&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠</p>
+                    <p>joladjfjljsdklslf&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                    <p>哭泣的夏天&nbsp;&nbsp;&nbsp;获得&nbsp;&nbsp;59元直减优惠券</p>
+                </div>
+            </div>
+            <div class="rule">
+                <p>活动规则：每个账号仅限抽一次；</p>
+                <p>使用范围：MySQL数据管理工程师微专业；</p>
+                <p>有限日期：请在9月20日前使用。</p>
+            </div>
+        </div>
+        <div id="prize" class="prize">
+            <div id="item1"><h3>59元</h3><h4>直减优惠券</h4></div>
+            <div id="item2">谢谢参与</div>
+            <div id="item3"><h3>79元</h3><h4>直减优惠券</h4></div>
+            <div id="item8">谢谢参与</div>
+            <input id="item" type="button" value="点击抽奖" />
+            <div id="item4">谢谢参与</div>
+            <div id="item7"><h3>109元</h3><h4>直减优惠券</h4></div>
+            <div id="item6">谢谢参与</div>
+            <div id="item5"><h3>99元</h3><h4>直减优惠券</h4></div>
+        </div>
+        <div id="wrap" class="wrap">
+            <div id="overflow" class="overflow"></div>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var t, 
+        //要跑几圈，假设为4圈
+        circles = 4,
+        //停止点
+        endpoint,
+        //当前的圈数
+        currentcircles = 1,
+        //延迟
+        speed = 700,
+        //当前循环的次数
+        index =1;         
+        
+        var item = document.getElementById("item");
+        var lucky = document.getElementById("lucky-guys-wrap");
+        // var luckyguys = lucky.getElementsByTagName('p');
+        setInterval(function(){
+            if(lucky.style.top == '-288px'){
+                lucky.style.top = 0;
+            }else{
+                lucky.style.top = parseInt(lucky.style.top || 0)  - 32 + 'px';
+            }
+        },3000);
+        
+
+        item.onclick = function() {
+            endpoint = 5;
+            t= setInterval(HighTurn,speed);
+            item.disabled = true;
+        }
+        //循环奖品方法
+        function HighTurn() {
+            //如果当前循环次数大于1，则当前循环说明不是1号奖品，那就得吧这个奖品的前一个兄弟的样式设为初始值
+            if (index > 1) {
+            //当然如果这时候index除以8余数为1的话说明这时至少循环完一圈且刚好又循环到1号奖品了，这就不能用(数组下标-1）的方法去清除样式了，因为他的前一位是上一次循环的8号奖品
+                if ((index % 8) == 1) {
+                    document.getElementById("item8").className = "";
+                }
+            //如果不是的话就好说了，直接(数组下标-1)清除样式 
+                else {
+                    document.getElementById("item" + ((index - (8 * (currentcircles - 1))) - 1)).className = "";
+                }
+            }
+            // 处理完前一个商品的样式后再来改变当前奖品的样式
+            document.getElementById("item" + (index - (8 * (currentcircles - 1)))).className = "true";
+            //完事之后判读现在的循环次数除以8的余数是否为0，如果为零则说明一次循环已经到了最后一个奖品，接下来要进入下一圈了（不需要考虑第一次循环的，因为index的初始值是1,1/8不为0）
+            if ((index % 8) == 0) {
+            // 进入下一圈就得当前圈数+1
+                currentcircles++;
+            }
+            //然后循环次数+1，不要把它放到圈数加1的前面去
+            index++;        
+            //这里用来改变速度，在下设定的规则是在第一圈是每经过一个奖品则速度+80，setInterval的第二个参数是多长时间执行一次的意思，所以值越小，执行的频率越高
+            if (currentcircles == 1) {
+                //注意了，我就是因为没写这句话被闷了好半天，不写他的话你的程序会一直在跑setInterval释放不了。因为改变了setInterval的参数要让他生效的话就得重新执行(我也不懂，但是试了一下这样好使)。所以先把之前的清一下
+                window.clearInterval(t);
+                //改变速度
+                speed -= 80;
+                //在重新执行
+                t = setInterval(HighTurn, speed);
+             }
+            //在下设定的在最后一圈的时候开始减速
+            else if (currentcircles == circles ) {
+                window.clearInterval(t);
+                speed += 80;
+                t = setInterval(HighTurn, speed);
+            }
+            //用来判断是否循环完了，如果当前圈数==要循环的圈数，且当前循环到的奖品编号==终结点则判定为循环结束，最终会停在终结点位置的奖品上
+            if (circles == currentcircles && (((index-1) % 8) == (endpoint%8))) {
+                //清除setInterval
+                window.clearInterval(t);
+                if(endpoint == 2 || endpoint == 4 || endpoint == 6 || endpoint == 8){
+                    document.getElementById("result").style.background = "url(./img/thx.png)no-repeat";
+                }
+                if(endpoint== 1){
+                    document.getElementById("result").style.background = "url(./img/59.png)no-repeat";
+                }
+                if(endpoint== 3){
+                    document.getElementById("result").style.background = "url(./img/79.png)no-repeat";
+                }
+                if(endpoint== 5){
+                    document.getElementById("result").style.background = "url(./img/99.png)no-repeat";
+                }
+                if(endpoint== 7){
+                    document.getElementById("result").style.background = "url(./img/109.png)no-repeat";
+                }
+                document.getElementById("wrap").style.display = "block";
+                return;
+             }
+        }
+
+
+    
+    
+    
+</script>
+</body>
+</html>
